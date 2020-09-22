@@ -78,6 +78,10 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt/* /tmp/a.txt /tmp/b.txt
 
+# another tools
+RUN apt-get update \
+    && apt- install -y --no-install-recommends --allow-unauthenticated \
+    tmux
 
 ################################################################################
 # builder
