@@ -80,7 +80,7 @@ RUN apt-get update \
 
 # another tools
 RUN apt-get update \
-    && apt- install -y --no-install-recommends --allow-unauthenticated \
+    && apt-install -y --no-install-recommends --allow-unauthenticated \
     tmux
 
 ################################################################################
