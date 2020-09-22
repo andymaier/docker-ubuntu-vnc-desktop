@@ -110,7 +110,7 @@ COPY web /src/web
 RUN cd /src/web \
     && yarn \
     && yarn build
-RUN cat /src/web/dist/static/novnc/app/ui.js | grep 'app/locale'
+RUN ls -all /src/web/dist/
 RUN sed -i 's#app/locale/#novnc/app/locale/#' /src/web/dist/static/novnc/app/ui.js
 
 
